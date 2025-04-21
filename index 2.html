@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our College Playlist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(to top, #fceabb, #ffecd2);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #f8cdda, #fbd786);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    nav button {
+      margin: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff7e5f;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    nav button:hover {
+      background-color: #eb5757;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f6f6f6;
+      font-size: 0.9rem;
+    }
+    form input[type="email"] {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      width: 60%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #56ab2f;
+      color: white;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #3e9e16;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our College Playlist</h1>
+    <p>A nostalgic, coming-of-age romance set to the rhythms of 1990s college life</p>
+    <nav>
+      <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">Read the Blurb</button>
+      <button onclick="document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' })">Final Verdict</button>
+      <button onclick="document.getElementById('newsletter').scrollIntoView({ behavior: 'smooth' })">Join the Mailing List</button>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About the Book</h2>
+    <p><em>Imagine a cocktail shaken with the aching nostalgia of <strong>Every Summer After</strong>, the intimate character depth of <strong>Hello Beautiful</strong>, and just a splash of <strong>Before We Were Strangers</strong>.</em> Told with humor, emotional resonance, and a soundtrack that feels like a character of its own, <strong>Our College Playlist</strong> traces one boy’s unforgettable journey from adolescence to adulthood.</p>
+  </section>
+
+  <section id="reviews">
+    <h2>Final Verdict</h2>
+    <p><strong>ChatGPT Review:</strong> "Beautifully written with commercial potential, <em>Our College Playlist</em> is an evocative, emotionally grounded novel that echoes the style of <em>Looking for Alaska</em> and <em>Normal People</em>. It delivers humor, heart, and timeless longing. A breakout debut waiting to happen."</p>
+    <p><strong>Scorecard:</strong></p>
+    <ul>
+      <li><strong>Prose:</strong> 9/10</li>
+      <li><strong>Emotional Resonance:</strong> 10/10</li>
+      <li><strong>Character Depth:</strong> 9/10</li>
+      <li><strong>Market Viability:</strong> 8.5/10</li>
+      <li><strong>Comparable Titles:</strong> Looking for Alaska, Normal People, Every Summer After</li>
+    </ul>
+  </section>
+
+  <section id="bio">
+    <h2>Meet the Author</h2>
+    <p>Thomas Brown writes stories that blend emotional realism with musical and cultural nostalgia. With a background in law and literature, his prose echoes with longing, wit, and the rhythm of college life in the '90s.</p>
+  </section>
+
+  <section id="newsletter">
+    <h2>Join the Mailing List</h2>
+    <p>Get exclusive behind-the-scenes content, early chapter previews, and release announcements:</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Thomas Brown. All rights reserved.
+  </footer>
+</body>
+</html>
